@@ -49,6 +49,46 @@ class ListMoviesViewController: UIViewController, MoviesViewInteractionLogic {
         definesPresentationContext = true
     }
 
+    // MARK: - Display
+
+    func fetchMovies(nextPage: Bool = false) {
+        viewModel.fetchPopularMovies(nextPage: nextPage) { (movieViewModel) in
+            DispatchQueue.main.async {
+                self.moviesView.movies = movieViewModel.movies ?? []
+                self.moviesView.collectionView.reloadData()
+            }
+        }
+    }
+
+    func fetchGenres() {
+        viewModel.fetchGenres { (genres) in
+            DispatchQueue.main.async {
+                // TODO: mostrar filtro de categoria
+            }
+        }
+    }
+
+    func displayMovieDetail(movie: Movie) {
+        let controller = ShowMovieViewController(with: movie)
+        guard let navigation = self.navigationController else { return }
+        navigation.pushViewController(controller, animated: true)
+    }
+
+    // MARK: - Movies View Interaction Logic
+
+    func didSelect(movie: Movie) {
+        displayMovieDetail(movie: movie)
+    }
+
+    func loadMoreData() {
+        fetchMovies(nextPage: true)
+    }
+
+    func refreshContent() {
+        viewModel.movieViewModel = MovieViewModel()
+        fetchMovies()
+        self.moviesView.collectionView.refreshControl?.endRefreshing()
+    }
 }
 
 
