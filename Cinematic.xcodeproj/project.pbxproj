@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		40AFF97D29EB89C4009211BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AFF97C29EB89C4009211BA /* Preview Assets.xcassets */; };
+		40AFF99A29EB8BA2009211BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AFF99929EB8BA2009211BA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40AFF95B29EB866C009211BA /* Cinematic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinematic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AFF97C29EB89C4009211BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40AFF99929EB8BA2009211BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,13 +47,14 @@
 		40AFF95D29EB866C009211BA /* Cinematic */ = {
 			isa = PBXGroup;
 			children = (
-				40AFF97B29EB89C4009211BA /* Preview Content */,
 				40AFF97A29EB895A009211BA /* ViewModels */,
 				40AFF97829EB8922009211BA /* DataSource */,
 				40AFF97929EB8939009211BA /* Views */,
 				40AFF97729EB8911009211BA /* Models */,
 				40AFF97629EB8900009211BA /* Services */,
 				40AFF97529EB88D2009211BA /* Controller */,
+				40AFF99929EB8BA2009211BA /* Assets.xcassets */,
+				40AFF97B29EB89C4009211BA /* Preview Content */,
 			);
 			path = Cinematic;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AFF99A29EB8BA2009211BA /* Assets.xcassets in Resources */,
 				40AFF97D29EB89C4009211BA /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
