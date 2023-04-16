@@ -36,6 +36,9 @@
 		40AFF9D729EBA7B1009211BA /* SearchMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40AFF9D329EBA7B1009211BA /* SearchMovieViewController.xib */; };
 		40AFF9D829EBA7B1009211BA /* ListFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40AFF9D429EBA7B1009211BA /* ListFavoritesViewController.xib */; };
 		40AFF9D929EBA7B1009211BA /* ShowMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40AFF9D529EBA7B1009211BA /* ShowMovieViewController.xib */; };
+		40AFF9DB29EBAC88009211BA /* GenreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFF9DA29EBAC88009211BA /* GenreService.swift */; };
+		40AFF9DE29EBACA5009211BA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFF9DD29EBACA5009211BA /* Service.swift */; };
+		40AFF9E029EBACBF009211BA /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFF9DF29EBACBF009211BA /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		40AFF9D329EBA7B1009211BA /* SearchMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchMovieViewController.xib; sourceTree = "<group>"; };
 		40AFF9D429EBA7B1009211BA /* ListFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListFavoritesViewController.xib; sourceTree = "<group>"; };
 		40AFF9D529EBA7B1009211BA /* ShowMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowMovieViewController.xib; sourceTree = "<group>"; };
+		40AFF9DA29EBAC88009211BA /* GenreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreService.swift; sourceTree = "<group>"; };
+		40AFF9DD29EBACA5009211BA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		40AFF9DF29EBACBF009211BA /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,9 @@
 		40AFF97629EB8900009211BA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				40AFF9DA29EBAC88009211BA /* GenreService.swift */,
+				40AFF9DD29EBACA5009211BA /* Service.swift */,
+				40AFF9DF29EBACBF009211BA /* MovieService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -284,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AFF9DB29EBAC88009211BA /* GenreService.swift in Sources */,
 				40AFF9BD29EB90DC009211BA /* ListMoviesViewModel.swift in Sources */,
 				40AFF9A129EB8D64009211BA /* AppDelegate.swift in Sources */,
+				40AFF9E029EBACBF009211BA /* MovieService.swift in Sources */,
 				40AFF9B229EB8FE8009211BA /* CustomImageView.swift in Sources */,
 				40AFF9CD29EB9E6B009211BA /* TabBarController.swift in Sources */,
 				40AFF9B929EB9028009211BA /* UIViewExtension.swift in Sources */,
@@ -302,6 +313,7 @@
 				40AFF9A729EB8E84009211BA /* Genre.swift in Sources */,
 				40AFF9B729EB901C009211BA /* UIColorExtension.swift in Sources */,
 				40AFF9C129EB90F4009211BA /* ListFavoritesViewModel.swift in Sources */,
+				40AFF9DE29EBACA5009211BA /* Service.swift in Sources */,
 				40AFF9A829EB8E84009211BA /* Movie.swift in Sources */,
 				40AFF9B029EB8FCB009211BA /* MoviesCollectionViewCell.swift in Sources */,
 			);
