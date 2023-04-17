@@ -7,8 +7,9 @@ IOS Case Study (CMP-1000)
 
 * I worked on [themovieDb API](https://www.themoviedb.org/)
 * Added Models, Views, Controllers, View Models
-* Added Data Source and Services for the API
-* Added many screens for Launch screen and Views for Movies
+* Data Source for the Core Data
+* Services for API Implemetation
+* UI - Launch screen and Views
 
 # ScreenShots
 
